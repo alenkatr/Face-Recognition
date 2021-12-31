@@ -1,6 +1,4 @@
-#VSE SKUPAJ-----CV verzija 28.3.2021---------------IMAGES--------------------For loop for k-----------------------------
-#To add new metric: https://stackoverflow.com/questions/21052509/sklearn-knn-usage-with-a-user-defined-metric
-#deluje----ok
+#VSE SKUPAJ-----CV verzija 29.12.2021---------------IMAGES--------------------Poincare metrics
 #1) load data IMAGES	2) defin PM	4) lmnn	4) knn	5) CV
 
 
@@ -29,7 +27,7 @@ from sklearn.preprocessing import StandardScaler    ##for standardization-Gaussi
 #X,y = datasets.load_digits(return_X_y=True)
 #X, y = datasets.load_iris(return_X_y=True)		#X--data, y--class
 
-train_df = pd.read_csv('japanBpp.csv')
+train_df = pd.read_csv('japanPhog.csv')
 X = np.array(train_df.iloc[:, :-1])	#all rows & all column except last one
 #print(train_data)
 y = np.array(train_df.iloc[:, -1])   #all rows & only last column
@@ -93,7 +91,7 @@ for i in range(1,11):
 	predicted = knn.predict(lmnn.transform(X))
 
 	#for output in txt file
-	with open("outputjapanBppPM.txt", "a") as f:
+	with open("outputjapanPhogPM.txt", "a") as f:
 		print(f"Classification report for classifier {knn}:\n"
 		      f"{metrics.classification_report(y, predicted)}\n", file=f)   
 		print('Name of data: ', file=f)
