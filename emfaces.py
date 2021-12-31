@@ -1,7 +1,5 @@
-#VSE SKUPAJ-----CV verzija 29.3.2021---------------IMAGES--------------------basic kNN with euclidean metric-----------------------------
-#To add new metric: https://stackoverflow.com/questions/21052509/sklearn-knn-usage-with-a-user-defined-metric
-#deluje----ok
-#1) load data IMAGES	2) defin PM	4) lmnn	4) knn	5) CV
+#VSE SKUPAJ-----CV verzija 29.12.2021---------------IMAGES--------------------basic kNN with euclidean metric-----------------------------
+#1) load data IMAGES	2) define PM	4) lmnn	4) knn	5) CV
 
 
 import matplotlib.pyplot as plt
